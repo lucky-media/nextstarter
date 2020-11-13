@@ -1,0 +1,31 @@
+{
+  "name": "nextstarter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.2",
+    "next": "10.0.1",
+    "next-seo": "^4.17.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-markdown": "^5.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.1.2",
+    "react-inlinesvg": "^2.1.1",
+    "tailwind-bootstrap-grid": "^3.1.0",
+    "tailwindcss": "^1.9.6",
+    "tailwindcss-debug-screens": "^1.1.0"
+  }
+}
