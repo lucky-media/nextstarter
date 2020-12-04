@@ -1,6 +1,6 @@
-import Link from "next/link";
-import SVG from "react-inlinesvg";
-import { useState } from "react";
+import Link from 'next/link'
+import SVG from 'react-inlinesvg'
+import { useState } from 'react'
 
 const NavItem = ({ children, href }) => {
   return (
@@ -11,11 +11,11 @@ const NavItem = ({ children, href }) => {
         </a>
       </Link>
     </li>
-  );
-};
+  )
+}
 
 export default function Navigation() {
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState(false)
 
   return (
     <div className="bg-white shadow-lg flex items-center">
@@ -36,7 +36,7 @@ export default function Navigation() {
 
           <div
             className={`md:col-6 md:flex justify-center md:justify-end ${
-              menu ? " flex" : " hidden"
+              menu ? ' flex' : ' hidden'
             }`}
           >
             <ul className="flex w-full p-5 flex-col md:w-auto md:p-0 md:flex-row items-center">
@@ -47,5 +47,5 @@ export default function Navigation() {
         </div>
       </div>
     </div>
-  );
+  )
 }

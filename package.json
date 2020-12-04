@@ -6,26 +6,42 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export"
+    "export": "next build && next export",
+    "format": "prettier '{components,content,pages,styles}/**/*.{css,js}' --write"
   },
   "dependencies": {
-    "gray-matter": "^4.0.2",
-    "next": "10.0.1",
+    "autoprefixer": "^10.0.4",
+    "next": "^10.0.3",
     "next-seo": "^4.17.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-markdown": "^5.0.2"
+    "postcss": "^8.1.14",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "tailwindcss": "^2.0.1"
   },
   "devDependencies": {
-    "eslint": "^7.13.0",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-prettier": "^3.1.4",
+    "babel-eslint": "^10.1.0",
+    "eslint": "6.x",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.21.5",
-    "postcss-preset-env": "^6.7.0",
-    "prettier": "^2.1.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gray-matter": "^4.0.2",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.2",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0",
     "react-inlinesvg": "^2.1.1",
     "tailwind-bootstrap-grid": "^3.1.0",
-    "tailwindcss": "^1.9.6",
     "tailwindcss-debug-screens": "^1.1.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && pretty-quick --staged"
+    }
   }
 }

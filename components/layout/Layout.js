@@ -1,8 +1,8 @@
-import Head from "next/head";
-import Navigation from "@/components/Navigation";
+import Head from 'next/head'
+import Navigation from '@/components/Navigation'
 
 export default function Layout({ children, title = null }) {
-  let dev = process.env.NODE_ENV === "development" ? true : false;
+  const dev = process.env.NODE_ENV === 'development'
 
   return (
     <>
@@ -18,17 +18,9 @@ export default function Layout({ children, title = null }) {
         <link rel="icon" href="/favicons/fav-192.ico" sizes="192x192" />
         <link rel="icon" href="/favicons/fav-228.ico" sizes="228x228" />
 
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com/"
-          crossOrigin="true"
-        />
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin="true" />
       </Head>
-      <div
-        className={`font-sans antialiased flex flex-col ${
-          dev ? "debug-screens" : null
-        }`}
-      >
+      <div className={`font-sans antialiased flex flex-col ${dev ? 'debug-screens' : null}`}>
         {/* Navigation here */}
         <Navigation />
 
@@ -37,5 +29,5 @@ export default function Layout({ children, title = null }) {
         {/* Footer here */}
       </div>
     </>
-  );
+  )
 }
