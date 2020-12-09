@@ -12,6 +12,7 @@
   "dependencies": {
     "autoprefixer": "^10.0.4",
     "next": "^10.0.3",
+    "next-google-fonts": "^1.2.1",
     "next-seo": "^4.17.0",
     "postcss": "^8.1.14",
     "react": "^17.0.1",

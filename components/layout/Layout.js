@@ -1,11 +1,13 @@
 import Head from 'next/head'
 import Navigation from '@/components/Navigation'
+import GoogleFonts from 'next-google-fonts'
 
 export default function Layout({ children, title = null }) {
   const dev = process.env.NODE_ENV === 'development'
 
   return (
     <>
+      <GoogleFonts href="https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap" />
       <Head>
         <title>{title} - Next Starter</title>
 
@@ -17,8 +19,6 @@ export default function Layout({ children, title = null }) {
         <link rel="icon" href="/favicons/fav-128.ico" sizes="128x128" />
         <link rel="icon" href="/favicons/fav-192.ico" sizes="192x192" />
         <link rel="icon" href="/favicons/fav-228.ico" sizes="228x228" />
-
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin="true" />
       </Head>
       <div className={`font-sans antialiased flex flex-col ${dev ? 'debug-screens' : null}`}>
         {/* Navigation here */}
