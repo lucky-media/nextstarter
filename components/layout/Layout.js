@@ -1,13 +1,11 @@
 import Head from 'next/head'
 import Navigation from '@/components/Navigation'
-import GoogleFonts from 'next-google-fonts'
 
 export default function Layout({ children, title = null }) {
   const dev = process.env.NODE_ENV === 'development'
 
   return (
     <>
-      <GoogleFonts href="https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap" />
       <Head>
         <title>{title} - Next Starter</title>
 

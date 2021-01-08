@@ -10,14 +10,14 @@
     "format": "prettier '{components,content,pages,styles}/**/*.{css,js}' --write"
   },
   "dependencies": {
+    "@fontsource/poppins": "^4.1.0",
     "autoprefixer": "^10.0.4",
-    "next": "^10.0.3",
-    "next-google-fonts": "^1.2.1",
+    "next": "^10.0.5",
     "next-seo": "^4.17.0",
-    "postcss": "^8.1.14",
+    "postcss": "^8.2.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "tailwindcss": "^2.0.1"
+    "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
@@ -29,13 +29,13 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "gray-matter": "^4.0.2",
-    "husky": "^4.3.0",
+    "husky": "^4.3.7",
     "lint-staged": "^10.5.2",
     "prettier": "^2.2.1",
     "pretty-quick": "^3.1.0",
-    "react-inlinesvg": "^2.1.1",
+    "react-inlinesvg": "^2.2.2",
     "tailwind-bootstrap-grid": "^3.1.0",
-    "tailwindcss-debug-screens": "^1.1.0"
+    "tailwindcss-debug-screens": "^2.0.0"
   },
   "lint-staged": {
     "*.js": "eslint"
