@@ -10,14 +10,14 @@
     "format": "prettier '{components,content,pages,styles}/**/*.{css,js}' --write"
   },
   "dependencies": {
-    "@fontsource/poppins": "^4.1.0",
+    "@fontsource/poppins": "^4.2.1",
     "autoprefixer": "^10.0.4",
     "next": "^10.0.6",
-    "next-seo": "^4.18.0",
+    "next-seo": "^4.19.0",
     "postcss": "^8.2.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.0.3"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
