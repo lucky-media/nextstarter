@@ -26,11 +26,11 @@ module.exports = {
     require('tailwind-bootstrap-grid')({
       gridGutterWidth: '32px',
       containerMaxWidths: {
-        sm: '540px',
-        md: '720px',
-        lg: '960px',
-        xl: '1140px',
-        '2xl': '1140px',
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1536px',
       },
     }),
     // eslint-disable-next-line no-undef

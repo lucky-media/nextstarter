@@ -1,5 +1,7 @@
 import Head from 'next/head'
-import Navigation from '@/components/Navigation'
+import dynamic from 'next/dynamic'
+
+const Navigation = dynamic(() => import('@/components/layout/Navigation'), { ssr: false })
 
 export default function Layout({ children, title = null }) {
   const dev = process.env.NODE_ENV === 'development'
