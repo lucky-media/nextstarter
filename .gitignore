@@ -32,3 +32,10 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+### VisualStudioCode ###
+.vscode/*
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+**/.history
