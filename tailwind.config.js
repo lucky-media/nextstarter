@@ -4,6 +4,7 @@ const config = require('tailwindcss/defaultTheme')
 // eslint-disable-next-line no-undef
 module.exports = {
   purge: ['./components/**/*.js', './pages/**/*.js'],
+  mode: 'jit',
   theme: {
     extend: {
       fontFamily: {
@@ -20,7 +21,6 @@ module.exports = {
   corePlugins: {
     container: false,
   },
-  variants: {},
   plugins: [
     // eslint-disable-next-line no-undef
     require('tailwind-bootstrap-grid')({
