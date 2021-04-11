@@ -9,7 +9,7 @@ export default function Layout({ children, title = null }) {
   return (
     <>
       <Head>
-        <title>{title} - Next Starter</title>
+        <title>{title ? `${title} - Next Starter` : 'Next Starter'}</title>
 
         {/* Favicons */}
         <link rel="icon" href="/favicons/fav-32.ico" sizes="32x32" />
