@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import SVG from 'react-inlinesvg'
 import { useState } from 'react'
+import SVG from 'react-inlinesvg'
 
 const NavItem = ({ children, href }) => {
   return (
