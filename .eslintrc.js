@@ -19,6 +19,7 @@ module.exports = {
   },
   plugins: ['simple-import-sort'],
   extends: [
+    'next',
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',

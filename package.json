@@ -14,15 +14,16 @@
   "dependencies": {
     "@fontsource/poppins": "^4.4.5",
     "autoprefixer": "^10.2.6",
-    "next": "^10.2.3",
+    "next": "^11.0.0",
     "next-seo": "^4.24.0",
-    "postcss": "8.3.3",
+    "postcss": "8.3.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "tailwindcss": "^2.1.4"
   },
   "devDependencies": {
     "eslint": "7.28.0",
+    "eslint-config-next": "^11.0.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-prettier": "3.4.0",
