@@ -3,7 +3,9 @@ const config = require('tailwindcss/defaultTheme')
 
 // eslint-disable-next-line no-undef
 module.exports = {
-  purge: ['./components/**/*.js', './pages/**/*.js'],
+  purge: {
+    content: ['./components/**/*.js', './pages/**/*.js']
+  },
   mode: 'jit',
   theme: {
     extend: {
