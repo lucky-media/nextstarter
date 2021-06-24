@@ -8,7 +8,7 @@
     "start": "next start",
     "export": "next build && next export",
     "lint": "eslint --fix .",
-    "format": "prettier '{components,content,pages,styles}/**/*.{css,js}' --write",
+    "format": "prettier '{components,content,pages,styles}/**/*.{css,js}' --write"
   },
   "dependencies": {
     "@fontsource/poppins": "^4.4.5",
