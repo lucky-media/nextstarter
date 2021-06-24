@@ -38,6 +38,11 @@
     "tailwindcss-debug-screens": "2.0.0"
   },
   "lint-staged": {
-    "*.js": "eslint"
+    "*.js": "eslint --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && pretty-quick --staged"
+    }
   }
 }
