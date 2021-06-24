@@ -29,8 +29,8 @@
     "eslint-plugin-react": "7.24.0",
     "eslint-plugin-react-hooks": "4.2.0",
     "eslint-plugin-simple-import-sort": "7.0.0",
-    "husky": "^4.3.8",
-    "lint-staged": "11.0.0",
+    "husky": "4.3.8",
+    "lint-staged": "10.5.4",
     "prettier": "2.3.1",
     "pretty-quick": "3.1.1",
     "react-inlinesvg": "2.3.0",
@@ -38,6 +38,6 @@
     "tailwindcss-debug-screens": "2.0.0"
   },
   "lint-staged": {
-    "*.js": "eslint --fix"
+    "*.js": "eslint"
   }
 }
