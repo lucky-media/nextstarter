@@ -9,7 +9,6 @@
     "export": "next build && next export",
     "lint": "eslint --fix .",
     "format": "prettier '{components,content,pages,styles}/**/*.{css,js}' --write",
-    "postinstall": "husky install"
   },
   "dependencies": {
     "@fontsource/poppins": "^4.4.5",
@@ -30,7 +29,7 @@
     "eslint-plugin-react": "7.24.0",
     "eslint-plugin-react-hooks": "4.2.0",
     "eslint-plugin-simple-import-sort": "7.0.0",
-    "husky": "6.0.0",
+    "husky": "^4.3.8",
     "lint-staged": "11.0.0",
     "prettier": "2.3.1",
     "pretty-quick": "3.1.1",
@@ -40,5 +39,10 @@
   },
   "lint-staged": {
     "*.js": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && pretty-quick --staged"
+    }
   }
 }
