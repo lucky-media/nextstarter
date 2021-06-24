@@ -13,7 +13,7 @@
   "dependencies": {
     "@fontsource/poppins": "^4.4.5",
     "autoprefixer": "^10.2.6",
-    "next": "^11.0.0",
+    "next": "^11.0.1",
     "next-seo": "^4.26.0",
     "postcss": "8.3.5",
     "react": "^17.0.2",
@@ -38,11 +38,6 @@
     "tailwindcss-debug-screens": "2.0.0"
   },
   "lint-staged": {
-    "*.js": "eslint"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && pretty-quick --staged"
-    }
+    "*.js": "eslint --fix"
   }
 }
