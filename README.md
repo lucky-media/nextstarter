@@ -1,3 +1,4 @@
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -24,6 +25,25 @@ After you have installed your preffered font you can import it to `_app.js`:
 ```js
 import '@fontsource/poppins/500.css'
 import '@fontsource/poppins/700.css'
+```
+
+## How to use it
+For easier usage you can use the green **Use this template** button, but below are the manual commands:
+```bash
+# Here we clone the project and give it a new folder name
+git clone https://github.com/lucky-media/nextstarter new_project_name
+
+# Remove the git history folder
+rm -rf .git
+
+# Initiate git again
+git init
+git add .
+git commit -m "Initial Commit"
+
+# Please change this url to the correct one for your project
+git remote add origin https://github.com/lucky-media/new_project_name
+git push -u origin main
 ```
 
 ## Learn More
