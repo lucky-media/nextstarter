@@ -20,7 +20,7 @@ export default function Layout({ children, title = null }) {
         <link rel="icon" href="/favicons/fav-192.ico" sizes="192x192" />
         <link rel="icon" href="/favicons/fav-228.ico" sizes="228x228" />
       </Head>
-      <div className={`font-sans antialiased flex flex-col ${dev ? 'debug-screens' : null}`}>
+      <div className={`font-sans antialiased flex flex-col ${dev ? 'debug-screens' : ''}`}>
         {/* Navigation here */}
         <Navigation />
 
