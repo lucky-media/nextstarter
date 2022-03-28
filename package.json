@@ -13,7 +13,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@fontsource/poppins": "^4.5.3",
+    "@fontsource/poppins": "^4.5.5",
     "autoprefixer": "^10.4.4",
     "next": "^12.1.0",
     "next-seo": "^5.1.0",
