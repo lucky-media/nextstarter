@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap:
+Sitemap: https://mywebsite.com/sitemap.xml
