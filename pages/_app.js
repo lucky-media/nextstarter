@@ -1,8 +1,13 @@
 import '../styles/globals.css'
-import '@fontsource/poppins/500.css'
-import '@fontsource/poppins/700.css'
 
+import { Poppins } from 'next/font/google'
 import { DefaultSeo } from 'next-seo'
+
+const poppins = Poppins({
+  weight: ['500', '700'],
+  subsets: ['latin'],
+  variable: '--font-poppins',
+})
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -16,7 +21,9 @@ function MyApp({ Component, pageProps }) {
           description: 'Website description here',
         }}
       />
-      <Component {...pageProps} />
+      <div className={`${poppins.variable} font-sans`}>
+        <Component {...pageProps} />
+      </div>
     </>
   )
 }

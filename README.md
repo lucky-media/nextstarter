@@ -1,4 +1,3 @@
-
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -17,18 +16,14 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 ## Fonts
 
-This project uses @fontsource to install Google Fonts as NPM packages in order to avoid penalties in Google Lighthouse.
-To browse the fonts you can [go here](https://fontsource.github.io/search-directory/), or you can checkout the [@fontsource](https://github.com/fontsource/fontsource) on Github.
+This project uses next/font to install Google Fonts locally in order to avoid penalties in Google Lighthouse.
 
-After you have installed your preffered font you can import it to `_app.js`:
-
-```js
-import '@fontsource/poppins/500.css'
-import '@fontsource/poppins/700.css'
-```
+Please read the [documentation](https://nextjs.org/docs/basic-features/font-optimization) on how to use this feature.
 
 ## How to use it
+
 For easier usage you can use the green **Use this template** button, but below are the manual commands:
+
 ```bash
 # Here we clone the project and give it a new folder name
 git clone https://github.com/lucky-media/nextstarter new_project_name
