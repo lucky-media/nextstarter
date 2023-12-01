@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.13",
-    "next": "^13.2.1",
+    "next": "^14.0.3",
     "next-seo": "^5.15.0",
     "postcss": "8.4.21",
     "react": "^18.2.0",
