@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import { useState } from 'react'
 import SVG from 'react-inlinesvg'
@@ -26,13 +28,13 @@ export default function Navigation() {
             <p className="font-bold text-gray-800 text-2xl">Next Starter</p>
           </div>
           <div className="w-1/4 md:hidden block">
-            <label htmlFor="menu-toggle" className="cursor-pointer">
+            <button id="menu-toggle" aria-label="Menu Toggle" className="cursor-pointer">
               <SVG
                 src="/svg/menu.svg"
                 className="fill-current text-black w-6 h-6"
                 onClick={() => setMenu(!menu)}
               />
-            </label>
+            </button>
           </div>
 
           <div

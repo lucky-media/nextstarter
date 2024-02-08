@@ -3,7 +3,7 @@ const config = require('tailwindcss/defaultTheme')
 
 // eslint-disable-next-line no-undef
 module.exports = {
-  content: ['./components/**/*.js', './pages/**/*.js'],
+  content: ['./src/app/**/*.{js,jsx}', './src/components/**/*.js'],
   theme: {
     extend: {
       container: {
