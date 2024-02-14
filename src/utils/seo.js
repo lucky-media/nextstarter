@@ -1,5 +1,4 @@
 export const defaultData = {
-  metadataBase: new URL('https://next-starter.luckymedia.dev/'),
   title: 'Next Starter',
   description: 'NextJS boilerplate with TailwindCSS and some opinionated defaults',
   twitter: {
@@ -7,7 +6,7 @@ export const defaultData = {
     creator: '@LuckyMediaDev',
   },
   alternates: {
-    canonical: 'https://next-starter.luckymedia.dev/',
+    canonical: '/',
   },
   openGraph: {
     title: 'Next Starter',
@@ -28,6 +27,15 @@ export const defaultData = {
     googleBot: {
       index: true,
       follow: true,
+    },
+  },
+  icons: {
+    icon: '/icon.png',
+    shortcut: '/shortcut-icon.png',
+    apple: '/apple-icon.png',
+    other: {
+      rel: 'apple-touch-icon-precomposed',
+      url: '/apple-touch-icon-precomposed.png',
     },
   },
 }
