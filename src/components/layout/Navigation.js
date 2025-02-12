@@ -27,10 +27,15 @@ export default function Navigation() {
           <div className="w-full flex justify-between md:w-1/2">
             <p className="font-bold text-gray-800 text-2xl">Next Starter</p>
             <div className="md:hidden block">
-              <button id="menu-toggle" aria-label="Menu Toggle" className="cursor-pointer">
+              <button
+                type="button"
+                id="menu-toggle"
+                aria-label="Menu Toggle"
+                className="cursor-pointer"
+              >
                 <SVG
                   src="/svg/menu.svg"
-                  className="fill-current text-black w-6 h-6"
+                  className="fill-black size-6"
                   onClick={() => setMenu(!menu)}
                 />
               </button>
@@ -38,7 +43,7 @@ export default function Navigation() {
           </div>
 
           <div
-            className={`md:w-1/2 md:flex justify-center md:justify-end ${
+            className={`md:w-1/2 md:flex md:flex-between justify-center md:justify-end ${
               menu ? ' flex' : ' hidden'
             }`}
           >
