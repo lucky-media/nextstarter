@@ -23,22 +23,27 @@ export default function Navigation() {
   return (
     <div className="bg-white shadow-lg">
       <div className="container">
-        <div className="flex flex-row py-6 justify-between">
-          <div className="md:w-1/2">
+        <div className="md:flex py-6 justify-between">
+          <div className="w-full flex justify-between md:w-1/2">
             <p className="font-bold text-gray-800 text-2xl">Next Starter</p>
-          </div>
-          <div className="w-1/4 md:hidden block">
-            <button id="menu-toggle" aria-label="Menu Toggle" className="cursor-pointer">
-              <SVG
-                src="/svg/menu.svg"
-                className="fill-current text-black w-6 h-6"
-                onClick={() => setMenu(!menu)}
-              />
-            </button>
+            <div className="md:hidden block">
+              <button
+                type="button"
+                id="menu-toggle"
+                aria-label="Menu Toggle"
+                className="cursor-pointer"
+              >
+                <SVG
+                  src="/svg/menu.svg"
+                  className="fill-black size-6"
+                  onClick={() => setMenu(!menu)}
+                />
+              </button>
+            </div>
           </div>
 
           <div
-            className={`md:w-1/2 md:flex justify-center md:justify-end ${
+            className={`md:w-1/2 md:flex md:flex-between justify-center md:justify-end ${
               menu ? ' flex' : ' hidden'
             }`}
           >
