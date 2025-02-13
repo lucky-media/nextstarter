@@ -12,8 +12,6 @@ const poppins = Poppins({
 })
 
 export default async function Layout({ children }) {
-  const dev = process.env.NODE_ENV === 'development'
-
   return (
     <html lang="en" suppressHydrationWarning>
       {/* Favicons */}
@@ -25,16 +23,7 @@ export default async function Layout({ children }) {
       <link rel="icon" href="/favicons/fav-192.ico" sizes="192x192" />
       <link rel="icon" href="/favicons/fav-228.ico" sizes="228x228" />
 
-      <body
-        className={clsx([
-          poppins.className,
-          'font-sans',
-          'antialiased',
-          'flex',
-          'flex-col',
-          dev && 'debug-screens',
-        ])}
-      >
+      <body className={clsx([poppins.className, 'font-sans', 'antialiased', 'flex', 'flex-col'])}>
         {/* Navigation here */}
         <Navigation />
 
